@@ -519,7 +519,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -543,6 +542,7 @@ img {
 
 .footer-subscribe-form-icon {
   fill: #fff;
+  margin-left: 16px;
 }
 
 /* ---Modal----- */
@@ -573,7 +573,7 @@ img {
   width: 408px;
   min-height: 584px;
   overflow: auto;
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
@@ -593,12 +593,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   width: 24px;
   height: 24px;
+  padding: 0;
   background-color: #e7e9fc;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-icon {
@@ -624,7 +627,6 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 48px;
   margin-bottom: 16px;
 }
 
@@ -647,6 +649,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #2e2f42;
+  background-color: transparent;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -690,7 +694,9 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #2e2f42;
+  background-color: transparent;
+  outline: transparent;
+  color: rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -719,12 +725,12 @@ img {
   fill: transparent;
   margin-right: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-checkbox:checked + .review-form-checkbox-label > .review-form-custom-checkbox {
   background-color: #404bbf;
-  border-color: #404bbf;
+  border: none;
   fill: #f4f4fd;
 }
 
